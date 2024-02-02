@@ -4,7 +4,7 @@ import random
 
 
 def generate_activity_log():
-    # Define the user's name
+    # Later we can implement a call to a file with a large list of activities
     activity_type = ["Running", "Walking", "Weight Lifting", "Swimming", "Yoga"]
 
     # Define the start date and time of the activity log
