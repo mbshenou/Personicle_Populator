@@ -12,7 +12,7 @@ def generate_meal_log():
 
     # Define the possible locations for the activities
     locations = ["gym", "park", "home", "office"]
-
+    meal_log = []
     for i in range(entry_count):
         # class datetime.datetime(year, month, day, hour=0, minute=0, second=0, microsecond=0, tzinfo=None, *, fold=0)
 
@@ -27,29 +27,30 @@ def generate_meal_log():
 
         log_time = datetime(year, month, day, hour, minute, second)
 
-
         # Generate a random location
         location = random.choice(locations)
-        food = random.choice(food)
+        curr_meal = []
+        j_range = random.randrange(1, 10)
+        for j in range(j_range):
+            curr_meal.append(random.choice(food))
+
 
         # Create a dictionary for the activity
-        activity = {
-            "activity_type": exercise,
+
+        meals = {
+            "food": curr_meal,
             "start_time": log_time.strftime("%Y-%m-%d %H:%M:%S"),
-            "end_time": end_time.strftime("%Y-%m-%d %H:%M:%S"),
-            "duration": duration,
             "location": location
         }
 
         # Add the activity to the activity log
-        activity_log.append(activity)
+        meal_log.append(meals)
 
         # Move to the next activity
-        current_date = end_time
-
+    print(meal_log)
     # Save the activity log to a JSON file
-    with open("activity_log.json", "w") as f:
-        json.dump(activity_log, f, indent=4)
+    with open("meal_log.json", "w") as f:
+        json.dump(meal_log, f, indent=4)
 
 
-generate_activity_log()
+generate_meal_log()
