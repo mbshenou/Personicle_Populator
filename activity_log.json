@@ -1,92 +1,87 @@
 [
     {
-        "activity_type": "Swimming (laps)",
+        "activity_type": "Rock Climbing",
         "start_time": "2024-01-01 00:00:00",
-        "duration": 2,
-        "location": "gym"
+        "duration": 2
     },
     {
-        "activity_type": "Zumba",
-        "start_time": "2024-01-03 23:00:00",
-        "duration": 3,
-        "location": "park"
+        "activity_type": "Jump Rope",
+        "start_time": "2024-01-03 12:00:00",
+        "duration": 1
     },
     {
-        "activity_type": "Rowing (moderate pace)",
-        "start_time": "2024-01-05 20:00:00",
-        "duration": 1,
-        "location": "office"
-    },
-    {
-        "activity_type": "Yoga",
-        "start_time": "2024-01-08 17:00:00",
-        "duration": 3,
-        "location": "home"
-    },
-    {
-        "activity_type": "Zumba",
-        "start_time": "2024-01-10 08:00:00",
-        "duration": 4,
-        "location": "home"
+        "activity_type": "Dancing (fast ballroom)",
+        "start_time": "2024-01-04 21:00:00",
+        "duration": 5
     },
     {
         "activity_type": "Meditation",
-        "start_time": "2024-01-13 05:00:00",
-        "duration": 2,
-        "location": "home"
+        "start_time": "2024-01-06 14:00:00",
+        "duration": 1
     },
     {
-        "activity_type": "Swimming (laps)",
-        "start_time": "2024-01-14 01:00:00",
-        "duration": 3,
-        "location": "home"
+        "activity_type": "Dancing (fast ballroom)",
+        "start_time": "2024-01-08 20:00:00",
+        "duration": 1
     },
     {
-        "activity_type": "Tennis (singles)",
-        "start_time": "2024-01-15 09:00:00",
-        "duration": 2,
-        "location": "home"
+        "activity_type": "Zumba",
+        "start_time": "2024-01-11 18:00:00",
+        "duration": 5
     },
     {
-        "activity_type": "Swimming (laps)",
-        "start_time": "2024-01-15 22:00:00",
-        "duration": 3,
-        "location": "office"
+        "activity_type": "Rowing (moderate pace)",
+        "start_time": "2024-01-14 16:00:00",
+        "duration": 4
+    },
+    {
+        "activity_type": "Cycling (moderate pace)",
+        "start_time": "2024-01-15 20:00:00",
+        "duration": 2
+    },
+    {
+        "activity_type": "Paddleboarding",
+        "start_time": "2024-01-17 12:00:00",
+        "duration": 1
     },
     {
         "activity_type": "Aerobic Dancing",
-        "start_time": "2024-01-19 00:00:00",
-        "duration": 5,
-        "location": "park"
-    },
-    {
-        "activity_type": "Hiking",
-        "start_time": "2024-01-20 12:00:00",
-        "duration": 1,
-        "location": "gym"
-    },
-    {
-        "activity_type": "Running (jogging)",
-        "start_time": "2024-01-22 22:00:00",
-        "duration": 5,
-        "location": "gym"
+        "start_time": "2024-01-19 15:00:00",
+        "duration": 5
     },
     {
         "activity_type": "Kickboxing",
-        "start_time": "2024-01-26 02:00:00",
-        "duration": 2,
-        "location": "gym"
+        "start_time": "2024-01-20 15:00:00",
+        "duration": 1
     },
     {
-        "activity_type": "Basketball (competitive)",
-        "start_time": "2024-01-29 03:00:00",
-        "duration": 2,
-        "location": "office"
+        "activity_type": "Dancing (fast ballroom)",
+        "start_time": "2024-01-23 07:00:00",
+        "duration": 1
     },
     {
-        "activity_type": "Yoga",
-        "start_time": "2024-01-30 04:00:00",
-        "duration": 2,
-        "location": "park"
+        "activity_type": "Hiking",
+        "start_time": "2024-01-24 07:00:00",
+        "duration": 3
+    },
+    {
+        "activity_type": "Swimming (laps)",
+        "start_time": "2024-01-26 15:00:00",
+        "duration": 2
+    },
+    {
+        "activity_type": "Weightlifting",
+        "start_time": "2024-01-27 03:00:00",
+        "duration": 1
+    },
+    {
+        "activity_type": "Zumba",
+        "start_time": "2024-01-30 00:00:00",
+        "duration": 4
+    },
+    {
+        "activity_type": "Dancing (fast ballroom)",
+        "start_time": "2024-01-30 21:00:00",
+        "duration": 2
     }
 ]

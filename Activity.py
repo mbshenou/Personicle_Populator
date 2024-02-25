@@ -19,9 +19,6 @@ def generate_activity_log():
     # Define the duration of each activity in minutes
 
 
-    # Define the possible locations for the activities
-    locations = ["gym", "park", "home", "office"]
-
     # Generate the activity log
     activity_log = []
     current_date = start_date
@@ -29,7 +26,6 @@ def generate_activity_log():
         # Generate a random heart rate between 1 and 10
         duration = random.randrange(1, 6)
         # Generate a random location
-        location = random.choice(locations)
         exercise = random.choice(activity_type)
         # Calculate the end time of the activity
         end_time = current_date + timedelta(hours=duration)
@@ -37,8 +33,7 @@ def generate_activity_log():
         activity = {
             "activity_type": exercise,
             "start_time": current_date.strftime("%Y-%m-%d %H:%M:%S"),
-            "duration": duration,
-            "location": location
+            "duration": duration
         }
 
         # Add the activity to the activity log
