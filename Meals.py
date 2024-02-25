@@ -5,20 +5,19 @@ import random
 
 def generate_meal_log():
     entry_count = 10
-
+    foodsJson = open('foods.json')
     # Later we can implement a call to a file with a large list of food
-    food = ["carrot", "celery", "onion", "garlic", "potato", "chicken", "salt", "pepper", "thyme", "bay leaf",
-            "chicken"]
+    food = json.load(foodsJson)
 
     # Define the possible locations for the activities
     locations = ["gym", "park", "home", "office"]
     meal_log = []
     for i in range(entry_count):
-        # class datetime.datetime(year, month, day, hour=0, minute=0, second=0, microsecond=0, tzinfo=None, *, fold=0)
+        # class datetime.datetime(year, month, day, hour=0, minute=0, second=0, microsecond=0, tz info=None, *, fold=0)
 
-        # not going for accuracy just trying to get MVP
+        # not going for accuracy just trying to get minimum viable product
         # not inclusive so max will be 2024
-        year = random.randrange(2000, 2025)
+        year = 2024
         month = random.randrange(1, 13)
         day = random.randrange(1, 29)
         hour = random.randrange(1, 24)
