@@ -1,16 +1,18 @@
 import json
 from datetime import datetime, timedelta
 import random
+import re
 
 
 def generate_meal_log():
     entry_count = 10
-    foodsJson = open('foods.json')
-    # Later we can implement a call to a file with a large list of food
-    food = json.load(foodsJson)
+    foodsJson = open('foods.json', 'r')
 
-    # Define the possible locations for the activities
-    locations = ["gym", "park", "home", "office"]
+    food = json.load(foodsJson)
+    foodsJson.close()
+    # getting all food names from  foods.json
+    food_names = [food_item["name"] for food_item in food["food"]]
+
     meal_log = []
     for i in range(entry_count):
         # class datetime.datetime(year, month, day, hour=0, minute=0, second=0, microsecond=0, tz info=None, *, fold=0)
@@ -23,30 +25,24 @@ def generate_meal_log():
         hour = random.randrange(1, 24)
         minute = random.randrange(1, 60)
         second = random.randrange(1, 60)
-
         log_time = datetime(year, month, day, hour, minute, second)
 
-        # Generate a random location
-        location = random.choice(locations)
-        curr_meal = []
-        j_range = random.randrange(1, 10)
-        for j in range(j_range):
-            curr_meal.append(random.choice(food))
+        curr_meal = random.sample(food_names, random.randrange(3, 7))
 
-
-        # Create a dictionary for the activity
+        random_food_names = [re.sub(r'\([^)]*\)', '', food_item).strip() for food_item in curr_meal]
+        random_meal_name= random.sample(random_food_names, 2)
 
         meals = {
+            "name": "".join(" ".join(random_meal_name)),
             "food": curr_meal,
-            "start_time": log_time.strftime("%Y-%m-%d %H:%M:%S"),
-            "location": location
+            "start_time": log_time.strftime("%Y-%m-%d %H:%M:%S")
         }
 
         # Add the activity to the activity log
         meal_log.append(meals)
 
         # Move to the next activity
-    print(meal_log)
+
     # Save the activity log to a JSON file
     with open("meal_log.json", "w") as f:
         json.dump(meal_log, f, indent=4)
