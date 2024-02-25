@@ -29,7 +29,7 @@ def generate_HR_logs():
         HR_logs.append(single_HR_log)
 
     # outputting to json file
-    with open("heart_rate_logs.json", "w") as f:
+    with open("Personicle_Populator\heart_rate_log.json", "w") as f:
         json.dump(HR_logs, f, indent=4)
 
 generate_HR_logs()
